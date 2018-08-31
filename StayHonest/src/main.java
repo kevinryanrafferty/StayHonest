@@ -1,9 +1,10 @@
 import java.sql.Time;
 import java.util.ArrayList
 public class main {
-	private List<String> goals() {
-		List<String> goals = new ArrayList<String>();
-		return goals;
+	private ScanClass userInput;
+	private List<String> () {
+		userInput = new ScanClass();
+		ArrayList<String> goals = userInput.getGoals();
 		hello;
 		chris;
 	}
