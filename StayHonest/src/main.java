@@ -5,6 +5,7 @@ public class main {
 		List<String> goals = new ArrayList<String>();
 		return goals;
 		hello;
+		chris;
 	}
 	
 	First we need a list of strings from the user. 
