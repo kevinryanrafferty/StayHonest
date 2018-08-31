@@ -20,7 +20,7 @@ public class ScanClass {
 			}
 		}
 	}
-	private ArrayList<String> getGoals(){
+	public ArrayList<String> getGoals(){
 		return goals;
 	}
 	
