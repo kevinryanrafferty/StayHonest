@@ -1,5 +1,7 @@
 
 public class main {
- tell me if this works
- it does;
+	private int goals() {
+		return 0;
+		
+	}
 }
