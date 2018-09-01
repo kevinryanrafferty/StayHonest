@@ -1,10 +1,13 @@
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class main {
 	private static ScanClass userInput;
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		userInput = new ScanClass();
 		userInput.start();
+		ArrayList<String> goals = userInput.getGoals();
+		System.out.println(goals);
 	}
 	
 	private ArrayList<String> add(){

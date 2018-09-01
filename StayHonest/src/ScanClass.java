@@ -1,13 +1,15 @@
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 public class ScanClass {
 	private ArrayList<String> goals = new ArrayList<String>();
 	
-	public void start() {
+	public void start() throws IOException {
 		boolean stop = false;
-		Scanner reader = new Scanner(System.in);
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("Enter a goal: (Press Q then hit Enter to Quit)");
-		String firstGoal = reader.next();
+		String firstGoal = reader.readLine();
 		if(firstGoal.equals("Q") || firstGoal.equals("q")) {
 			System.out.println("Here");
 			stop = true;
@@ -16,7 +18,7 @@ public class ScanClass {
 		goals.add(firstGoal);
 		while(!stop) {
 			System.out.println("Another goal? (Press Q then hit Enter to Quit)");
-			firstGoal = reader.next();
+			firstGoal = reader.readLine();
 			if(firstGoal.equals("Q") || firstGoal.equals("q")) {
 				stop = true;
 				reader.close();
