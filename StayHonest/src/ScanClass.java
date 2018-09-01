@@ -3,20 +3,26 @@ import java.util.Scanner;
 public class ScanClass {
 	private ArrayList<String> goals = new ArrayList<String>();
 	
-	public void main() {
+	public void start() {
 		boolean stop = false;
 		Scanner reader = new Scanner(System.in);
-		System.out.println("Enter a goal: ");
-		String s = reader.next();
-		goals.add(s);
+		System.out.println("Enter a goal: (Press Q then hit Enter to Quit)");
+		String firstGoal = reader.next();
+		if(firstGoal.equals("Q") || firstGoal.equals("q")) {
+			System.out.println("Here");
+			stop = true;
+			reader.close();
+		}
+		goals.add(firstGoal);
 		while(!stop) {
 			System.out.println("Another goal? (Press Q then hit Enter to Quit)");
-			if(s == "Q" || s == "q") {
+			firstGoal = reader.next();
+			if(firstGoal.equals("Q") || firstGoal.equals("q")) {
 				stop = true;
 				reader.close();
 			}
-			else {
-				goals.add(s);
+			else if(!stop){
+				goals.add(firstGoal);
 			}
 		}
 	}

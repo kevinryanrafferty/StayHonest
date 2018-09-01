@@ -1,12 +1,17 @@
-import java.sql.Time;
-import java.util.ArrayList
+import java.util.ArrayList;
+
 public class main {
-	private ScanClass userInput;
-	private List<String> () {
+	private static ScanClass userInput;
+	public static void main(String[] args) {
+		userInput = new ScanClass();
+		userInput.start();
+	}
+	
+	private ArrayList<String> add(){
 		userInput = new ScanClass();
 		ArrayList<String> goals = userInput.getGoals();
-		hello;
-		chris;
+		return goals;
+
 	}
 	
 	/*First we need a list of strings from the user. 
