@@ -12,7 +12,6 @@ public class ScanClass {
 		System.out.println("Enter a goal: (Press Q then hit Enter to Quit)");
 		String firstGoal = reader.readLine();
 		if(firstGoal.equals("Q") || firstGoal.equals("q")) {
-			System.out.println("Here");
 			stop = true;
 			reader.close();
 		}
