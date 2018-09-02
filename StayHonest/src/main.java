@@ -4,10 +4,14 @@ import java.util.ArrayList;
 
 public class main {
 	private static ScanClass userInput;
+	
+	private static SendReminder reminder;
 	public static void main(String[] args) throws IOException {
 		userInput = new ScanClass();
 		userInput.start();
 		ArrayList<String> goals = userInput.getGoals();
+		reminder = new SendReminder();
+		reminder.waitingSequence();
 		System.out.println(goals);
 	}
 	
