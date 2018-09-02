@@ -1,6 +1,7 @@
 import java.io.IOException;
 import java.util.ArrayList;
 
+
 public class main {
 	private static ScanClass userInput;
 	public static void main(String[] args) throws IOException {
